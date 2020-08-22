@@ -5,6 +5,7 @@ import 'package:video_chat/controller/channel_search_state.dart';
 
 class ChannelSearchPage extends StatefulWidget {
   const ChannelSearchPage._({Key key}) : super(key: key);
+  static const routeName = '/channel-search-page';
 
   static Widget wrapped() {
     return StateNotifierProvider<ChannelSearchController, ChannelSearchState>(

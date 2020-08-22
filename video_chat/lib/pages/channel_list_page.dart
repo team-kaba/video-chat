@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:video_chat/controller/channel_list_controller.dart';
 import 'package:video_chat/controller/channel_list_state.dart';
 import 'package:video_chat/pages/bottom_navigation.dart';
+import 'package:video_chat/pages/channel_search_page.dart';
 
 class ChannelListPage extends StatefulWidget {
   const ChannelListPage._({Key key}) : super(key: key);
@@ -41,7 +42,9 @@ class _ChannelListPageState extends State<ChannelListPage> {
           children: <Widget>[
             const Text('チャンネル'),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(ChannelSearchPage.routeName);
+              },
               icon: Icon(Icons.add),
             ),
           ],
